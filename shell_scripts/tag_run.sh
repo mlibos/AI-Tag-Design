@@ -9,7 +9,7 @@ source activate mlfold
 
 folder_with_pdbs="../inputs/Alfa_tags"
 
-output_dir="../outputs/isolated_tag_high_temp/"
+output_dir="../outputs/isolated_tag/"
 if [ ! -d $output_dir ]
 then
     mkdir -p $output_dir
@@ -22,7 +22,7 @@ python ../helper_scripts/parse_multiple_chains.py --input_path=$folder_with_pdbs
 python ../protein_mpnn_run.py \
         --jsonl_path $path_for_parsed_chains \
         --out_folder $output_dir \
-        --num_seq_per_target 250 \
-        --sampling_temp "0.5" \
-        --seed 5517 \
+        --num_seq_per_target 10000 \
+        --sampling_temp "0.25" \
+        --seed 3457 \
         --batch_size 1
