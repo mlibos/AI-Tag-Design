@@ -1,7 +1,7 @@
 # AI-Tag-Design
 AI Design Project @IPI for generating new epitope tags and nanobodies that bind to them. 
 
-Current Pipeline:
+## Current Pipeline:
 * Redesign of epitope tags using original Alfa Tag as a template for design.
 * Use ProteinMPNN as the redesign framework for generating Alfa Tags
 * Initial input methods consisted of: only using the alfa tag, using the alfa tag and nbAlfa while fixing nbAlfa, and using the alfa tag and nbAlfa while allowing for redesign of binding residues on nbAlfa.
